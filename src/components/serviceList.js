@@ -19,14 +19,14 @@ export function ServiceList(){
          {items.map(({ id, name, price }) => (
          <li key={id}>
            {`${name} ${price}`}
-           <button onClick={() => handleRemove(id)} className="button button_close">
-             <span className="material-icons">
-               close
-             </span>
-           </button>
            <button onClick={() => handleEdit(id, name, price)} className="button button_edit">
              <span className="material-icons">
                edit
+             </span>
+           </button>
+           <button onClick={() => handleRemove(id)} className="button button_close">
+             <span className="material-icons">
+               close
              </span>
            </button>
          </li>
